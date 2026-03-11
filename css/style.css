@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+/*O código @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap'); é uma regra CSS que importa as fontes Poppins e Unbounded do Google Fonts. Isso permite que essas fontes sejam usadas em todo o documento CSS para estilizar o texto. */
+
+@font-face {
+    /*O código @font-face é uma regra CSS que permite definir uma fonte personalizada para ser usada em um site. No exemplo, estamos definindo a fonte "Unbounded" e especificando o caminho para o arquivo de fonte "Unbounded-Bold.ttf". Isso permite que a fonte seja usada em todo o documento CSS para estilizar o texto. */
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded-Bold.ttf") format("truetype");
+    /*O valor de src define a fonte a ser usada e o formato do arquivo de fonte. No exemplo, estamos especificando que a fonte "Unbounded" deve ser carregada a partir do arquivo "Unbounded-Bold.ttf" localizado na pasta "fonts" e que o formato do arquivo é "truetype". */
+    font-weight: 700;
+    font-style: normal;
+    /*O valor de font-weight define a espessura da fonte, e o valor de font-style define o estilo da fonte. No exemplo, estamos definindo a fonte "Unbounded" com um peso de 700 (negrito) e um estilo normal (sem itálico). */
+    font-display: swap;
+    /*O valor de font-display define como a fonte é exibida durante o processo de carregamento. No exemplo, estamos usando o valor "swap", o que significa que o navegador exibirá uma fonte de fallback enquanto a fonte personalizada está sendo carregada, e assim que a fonte personalizada estiver disponível, ela será exibida. */
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    /*O valor de margin define a margem externa do elemento. Neste caso, o valor é 0, o que significa que não haverá margem externa ao redor dos elementos. */
+    padding: 0;
+    /*O valor de padding define o preenchimento interno do elemento. Neste caso, o valor é 0, o que significa que não haverá preenchimento interno dentro dos elementos. */
+    box-sizing: border-box;
+    /*O valor de box-sizing define como as dimensões do elemento são calculadas. Neste caso, o valor é border-box, o que significa que as dimensões do elemento incluirão a borda e o preenchimento, em vez de apenas o conteúdo. */
+}
+
+body {
+    background-color: #0E1014;
+}
+
+header img {
+    display: block;
+    margin: 75px 0px 0px 360px;
+    /*O valor de margin define a margem externa do elemento. Neste caso, o valor é 75px 0px 0px 360px, o que significa que haverá uma margem de 75 pixels na parte superior do elemento, 0 pixels na parte direita, 0 pixels na parte inferior e 360 pixels na parte esquerda do elemento. Sempre fazer no sentido horário, ou seja, primeiro a margem superior, depois a direita, depois a inferior e por último a esquerda. Margem direita não possui o valor, margem abaixo já foi colocada no h1, por isso o valor zerado.*/
+}
+
+h1 {
+    font-size: 64px;
+    /*O valor de font-size define o tamanho da fonte do elemento. Neste caso, o valor é 85px, o que significa que a fonte terá um tamanho de 85 pixels. 64pt equivale a aproximadamente 85px */
+    color: #FFFFFF;
+    /*O valor de color define a cor do texto do elemento. Neste caso, o valor é #F5F5F5, que é um tom de branco. */
+    font-family: 'Unbounded', 'sans-serif';
+    /*O valor de font-family define a família de fontes do elemento. Neste caso, o valor é 'Unbounded', 'sans-serif', o que significa que a fonte usada será a fonte Unbounded, e se não estiver disponível, uma fonte sans-serif genérica será usada. */
+    font-weight: bold;
+    /*O valor de font-weight define a espessura da fonte do elemento. Neste caso, o valor é bold, o que significa que a fonte será exibida em negrito. */
+    text-align: center;
+    margin: 60px auto;
+
+}
+
+h1 span {
+    /*O seletor h1 span seleciona os elementos <span> que estão dentro de um elemento <h1>. Isso significa que as regras de estilo definidas para h1 span serão aplicadas apenas aos elementos <span> que estão dentro de um elemento <h1>. */
+    color: #9747FF;
+}
+
+p {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 'regular';
+    /*O valor de font-weight define a espessura da fonte do elemento. Neste caso, o valor é 'regular', o que significa que a fonte será exibida com uma espessura normal, sem negrito. 24 pt equivale a aproximadamente 32px */
+    text-align: center;
+    margin: 24px auto 0;
+    /*O valor de margin define a margem externa do elemento. Neste caso, o valor é 24px auto, o que significa que haverá uma margem de 24 pixels na parte superior e inferior do elemento, e uma margem automática na parte direita e esquerda do elemento, centralizando-o horizontalmente. */
+    width: 792px;
+    /*O valor de width define a largura do elemento. Neste caso, o valor é 792px, o que significa que a largura do elemento será de 792 pixels. */
+}
+
+a {
+    color: #FFFFFF;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 'regular';
+    font-size: 24px;
+    text-decoration: none;
+    /*O valor de text-decoration define a decoração do texto do elemento. Neste caso, o valor é none, o que significa que não haverá decoração, como sublinhado, sobrelinha ou linha através do texto. */
+    background-color: #9747FF;
+    /*O valor de background-color define a cor de fundo do elemento. Neste caso, o valor é #9747FF, que é um tom de roxo. */
+    width: 340px;
+    /*O valor de width define a largura do elemento. Neste caso, o valor é 340px, o que significa que a largura do elemento será de 340 pixels. */
+    height: 66px;
+    /*O valor de height define a altura do elemento. Neste caso, o valor é 66px, o que significa que a altura do elemento será de 66 pixels. */
+    display: block;
+    /*O valor de display define como o elemento será exibido. Neste caso, o valor é block, o que significa que o elemento será exibido como um bloco, ocupando toda a largura disponível. */
+    /*padding-top: 24px;
+    O valor de padding-top define o preenchimento interno na parte superior do elemento. Neste caso, o valor é 24px, o que significa que haverá um espaço de 24 pixels entre o conteúdo do elemento e a borda superior.
+    padding-bottom: 24px;
+    O valor de padding-bottom define o preenchimento interno na parte inferior do elemento. Neste caso, o valor é 24px, o que significa que haverá um espaço de 24 pixels entre o conteúdo do elemento e a borda inferior. 
+    padding-right: 48px;
+    O valor de padding-right define o preenchimento interno na parte direita do elemento. Neste caso, o valor é 48px, o que significa que haverá um espaço de 48 pixels entre o conteúdo do elemento e a borda direita.
+    padding-left: 48px;
+    O valor de padding-left define o preenchimento interno na parte esquerda do elemento. Neste caso, o valor é 48px, o que significa que haverá um espaço de 48 pixels entre o conteúdo do elemento e a borda esquerda. */
+    text-align: center;
+    /*O valor de text-align define o alinhamento do texto dentro do elemento. Neste caso, o valor é center, o que significa que o texto será centralizado horizontalmente dentro do elemento. */
+    line-height: 66px;
+    /*O valor de line-height define a altura da linha do texto dentro do elemento. Neste caso, o valor é 66px, o que significa que a altura da linha será de 66 pixels, alinhando o texto verticalmente no centro do elemento. */
+    border-radius: 36px;
+    /*O valor de border-radius define o raio das bordas do elemento. Neste caso, o valor é 36px, o que significa que as bordas do elemento serão arredondadas com um raio de 36 pixels. */
+    margin: 40px auto;
+    /*margin: 100px 790px;O valor de margin define a margem externa do elemento. Neste caso, o valor é 100px 790px, o que significa que haverá uma margem de 100 pixels na parte superior e inferior do elemento, e uma margem de 790 pixels na parte direita e esquerda do elemento. Sempre fazer no sentido horário, ou seja, primeiro a margem superior, depois a direita, depois a inferior e por último a esquerda. */
+    /*margin: 100px 790px 10px 790px;
+    O valor de margin define a margem externa do elemento. Neste caso, o valor é 100px 790px 10px 790px, o que significa que haverá uma margem de 100 pixels na parte superior, 790 pixels na parte direita, 10 pixels na parte inferior e 790 pixels na parte esquerda do elemento. Sempre fazer no sentido horário, ou seja, primeiro a margem superior, depois a direita, depois a inferior e por último a esquerda. */
+    /*margin-top: 100px;
+    margin-right: 790px;
+    margin-bottom: 100px;
+    margin-left: 790px;
+    O valor de margin-top define a margem externa na parte superior do elemento. Neste caso, o valor é 100px, o que significa que haverá um espaço de 100 pixels entre o elemento e os elementos acima dele.
+   O valor de margin-right define a margem externa na parte direita do elemento. Neste caso, o valor é 790px, o que significa que haverá um espaço de 790 pixels entre o elemento e os elementos à direita dele.
+   O valor de margin-bottom define a margem externa na parte inferior do elemento. Neste caso, o valor é 100px, o que significa que haverá um espaço de 100 pixels entre o elemento e os elementos abaixo dele.
+   O valor de margin-left define a margem externa na parte esquerda do elemento. Neste caso, o valor é 790px, o que significa que haverá um espaço de 790 pixels entre o elemento e os elementos à esquerda dele. Sempre fazer no sentido horário, ou seja, primeiro a margem superior, depois a direita, depois a inferior e por último a esquerda. */
+}
+
+a:hover {
+    /*O código a:hover é um seletor CSS que aplica estilos ao elemento <a> quando o mouse passa sobre ele (hover). Neste caso, quando o mouse estiver sobre o link, a cor de fundo do link mudará para #8233e8 (roxo) e a cor do texto mudará para #FFFFFF (branco). */
+    background-color: #8233e8;
+    /*O valor de background-color define a cor de fundo do elemento. Neste caso, o valor é #8233e8, que é um tom de roxo. */
+}
+
+section img {
+    display: block;
+    /*O valor de display define como o elemento será exibido. Neste caso, o valor é block, o que significa que o elemento será exibido como um bloco, ocupando toda a largura disponível. */
+    width: 792px;
+    height: 446px;
+    margin: 0 auto;
+    /*O valor de margin define a margem externa do elemento. Neste caso, o valor é 0 auto, o que significa que haverá uma margem de 0 pixels na parte superior e inferior do elemento, e uma margem automática na parte direita e esquerda do elemento, centralizando-o horizontalmente. A margem é zero porquê já foi adicionada no botão*/
+}
+
+span {
+    /*O seletor span seleciona todos os elementos <span> no documento. Isso significa que as regras de estilo definidas para span serão aplicadas a todos os elementos <span> presentes na página. */
+    color: green;
+}
+
+@media(max-width: 768px) {
+
+    header img {
+        margin: 65px 0 0 60px;
+    }
+
+    p {
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    header img {
+        margin: 32px 0 0 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 340px;
+    }
+
+    a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    section img {
+        width: 340px;
+        height: 230px;
+    }
+
+}
