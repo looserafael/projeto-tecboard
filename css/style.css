@@ -41,8 +41,8 @@ header img {
 }
 
 h1 {
-    font-size: 64px;
-    /*O valor de font-size define o tamanho da fonte do elemento. Neste caso, o valor é 85px, o que significa que a fonte terá um tamanho de 85 pixels. 64pt equivale a aproximadamente 85px */
+    font-size: 70px;
+    /*O valor de font-size define o tamanho da fonte do elemento. Neste caso, o valor é 70px, o que significa que a fonte terá um tamanho de 70 pixels. 64pt equivale a aproximadamente 85px */
     color: #FFFFFF;
     /*O valor de color define a cor do texto do elemento. Neste caso, o valor é #F5F5F5, que é um tom de branco. */
     font-family: 'Unbounded', 'sans-serif';
